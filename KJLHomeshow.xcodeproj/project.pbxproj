@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F26CCD842484EC33008D5508 /* UniversalKJLHomeshow */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F26CCD852484EC33008D5508 /* Build configuration list for PBXAggregateTarget "UniversalKJLHomeshow" */;
+			buildPhases = (
+				F26CCD892484EC3C008D5508 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalKJLHomeshow;
+			productName = UniversalKJLHomeshow;
+		};
+		F2C3E136246533B7006D0D69 /* UMModuleMap */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F2C3E137246533B7006D0D69 /* Build configuration list for PBXAggregateTarget "UMModuleMap" */;
+			buildPhases = (
+				F2C3E13B246533EC006D0D69 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UMModuleMap;
+			productName = UMModuleMap;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1461090E243478F600315C65 /* UIViewController+Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461090B243478F600315C65 /* UIViewController+Storyboardable.swift */; };
+		1461090F243478F600315C65 /* HomeshowVRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461090D243478F600315C65 /* HomeshowVRViewController.swift */; };
+		14610910243478F600315C65 /* HomeshowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461090A243478F600315C65 /* HomeshowManager.swift */; };
+		1461091724347ACC00315C65 /* HomeshowCallViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1461091624347ACC00315C65 /* HomeshowCallViewController.storyboard */; };
+		1461091824347B5700315C65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14610911243478FA00315C65 /* Images.xcassets */; };
+		146109272435BFEA00315C65 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7CCF2690953A3B2B41CF4A61 /* Pods_KJLHomeshow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68488BBB8B95359C4393396 /* Pods_KJLHomeshow.framework */; };
+		F23DECDA24C1A3D50079E866 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23DECD924C1A3D50079E866 /* Utils.swift */; };
+		F24C6F6B2474DCB100A61D87 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24C6F692472801F00A61D87 /* UserNotifications.framework */; };
+		F25633F0243DBB7700DB7AD0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25633EF243DBB7700DB7AD0 /* WebKit.framework */; };
+		F25633F2243F3E8900DB7AD0 /* HomeshowCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25633F1243F3E8900DB7AD0 /* HomeshowCallViewController.swift */; };
+		F25633F4243F454C00DB7AD0 /* HomeshowVRViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25633F3243F454C00DB7AD0 /* HomeshowVRViewController.storyboard */; };
+		F26714E3247BB960005DE159 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26714E0247BB960005DE159 /* Event.swift */; };
+		F26714E4247BB960005DE159 /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26714E1247BB960005DE159 /* EventSource.swift */; };
+		F26714E5247BB960005DE159 /* EventStreamParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26714E2247BB960005DE159 /* EventStreamParser.swift */; };
+		F26714EE247BB99B005DE159 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F26714E7247BB99B005DE159 /* WebViewJavascriptBridgeBase.m */; };
+		F26714EF247BB99B005DE159 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F26714E8247BB99B005DE159 /* WKWebViewJavascriptBridge.m */; };
+		F26714F0247BB99B005DE159 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F26714E9247BB99B005DE159 /* WebViewJavascriptBridge.m */; };
+		F26714F1247BB99B005DE159 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F26714EA247BB99B005DE159 /* WebViewJavascriptBridgeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F26714F2247BB99B005DE159 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = F26714EB247BB99B005DE159 /* WebViewJavascriptBridge.js.txt */; };
+		F26714F3247BB99B005DE159 /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = F26714EC247BB99B005DE159 /* WebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F26714F4247BB99B005DE159 /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = F26714ED247BB99B005DE159 /* WKWebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D998D924CAD81F0006347C /* KJLHomeshow.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D998D824CAD81F0006347C /* KJLHomeshow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2E9CE8E246555AA002BAB7E /* KJLHomeshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9CE8D246555AA002BAB7E /* KJLHomeshow.swift */; };
+		F2FAF0612449A1EE00B6FCC2 /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAF0602449A1EE00B6FCC2 /* WKWebView.swift */; };
+		F2FAF0632449D20A00B6FCC2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAF0622449D20A00B6FCC2 /* Const.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2D998D624CACED00006347C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146108F6243478E800315C65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2C3E136246533B7006D0D69;
+			remoteInfo = UMModuleMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		146109252435BFCF00315C65 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				146109272435BFEA00315C65 /* (null) in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		146108FF243478E800315C65 /* KJLHomeshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KJLHomeshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14610903243478E800315C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1461090A243478F600315C65 /* HomeshowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeshowManager.swift; sourceTree = "<group>"; };
+		1461090B243478F600315C65 /* UIViewController+Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboardable.swift"; sourceTree = "<group>"; };
+		1461090D243478F600315C65 /* HomeshowVRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeshowVRViewController.swift; sourceTree = "<group>"; };
+		14610911243478FA00315C65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1461091624347ACC00315C65 /* HomeshowCallViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeshowCallViewController.storyboard; sourceTree = "<group>"; };
+		5E2B353D84CE88984FFACA5F /* Pods-KJLHomeshow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJLHomeshow.release.xcconfig"; path = "Target Support Files/Pods-KJLHomeshow/Pods-KJLHomeshow.release.xcconfig"; sourceTree = "<group>"; };
+		D15F4514F98DA93D290EB3E5 /* Pods-KJLHomeshow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJLHomeshow.debug.xcconfig"; path = "Target Support Files/Pods-KJLHomeshow/Pods-KJLHomeshow.debug.xcconfig"; sourceTree = "<group>"; };
+		D68488BBB8B95359C4393396 /* Pods_KJLHomeshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJLHomeshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE79E093AC68E39E365D662C /* Pods-KJLHomeshow.forbeta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJLHomeshow.forbeta.xcconfig"; path = "Target Support Files/Pods-KJLHomeshow/Pods-KJLHomeshow.forbeta.xcconfig"; sourceTree = "<group>"; };
+		F23DECD924C1A3D50079E866 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F24C6F692472801F00A61D87 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		F25633EF243DBB7700DB7AD0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		F25633F1243F3E8900DB7AD0 /* HomeshowCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeshowCallViewController.swift; sourceTree = "<group>"; };
+		F25633F3243F454C00DB7AD0 /* HomeshowVRViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeshowVRViewController.storyboard; sourceTree = "<group>"; };
+		F26714E0247BB960005DE159 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F26714E1247BB960005DE159 /* EventSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSource.swift; sourceTree = "<group>"; };
+		F26714E2247BB960005DE159 /* EventStreamParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStreamParser.swift; sourceTree = "<group>"; };
+		F26714E7247BB99B005DE159 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		F26714E8247BB99B005DE159 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		F26714E9247BB99B005DE159 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		F26714EA247BB99B005DE159 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		F26714EB247BB99B005DE159 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		F26714EC247BB99B005DE159 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		F26714ED247BB99B005DE159 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		F2D998D824CAD81F0006347C /* KJLHomeshow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJLHomeshow.h; sourceTree = "<group>"; };
+		F2E9CE8D246555AA002BAB7E /* KJLHomeshow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJLHomeshow.swift; sourceTree = "<group>"; };
+		F2FAF0602449A1EE00B6FCC2 /* WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebView.swift; sourceTree = "<group>"; };
+		F2FAF0622449D20A00B6FCC2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		146108FC243478E800315C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24C6F6B2474DCB100A61D87 /* UserNotifications.framework in Frameworks */,
+				F25633F0243DBB7700DB7AD0 /* WebKit.framework in Frameworks */,
+				7CCF2690953A3B2B41CF4A61 /* Pods_KJLHomeshow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		146108F5243478E800315C65 = {
+			isa = PBXGroup;
+			children = (
+				14610901243478E800315C65 /* KJLHomeshow */,
+				14610900243478E800315C65 /* Products */,
+				B4958D1DF4700CF02B449D25 /* Frameworks */,
+				F26714C2247B9FDB005DE159 /* Recovered References */,
+				3DE1AB0DCC617F5B104A9991 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		14610900243478E800315C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				146108FF243478E800315C65 /* KJLHomeshow.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14610901243478E800315C65 /* KJLHomeshow */ = {
+			isa = PBXGroup;
+			children = (
+				F2D998D824CAD81F0006347C /* KJLHomeshow.h */,
+				F26714E6247BB99B005DE159 /* WebViewJavascriptBridge */,
+				F26714DF247BB960005DE159 /* EventSource */,
+				14610911243478FA00315C65 /* Images.xcassets */,
+				F2FAF0622449D20A00B6FCC2 /* Const.swift */,
+				14610903243478E800315C65 /* Info.plist */,
+				F23DECD924C1A3D50079E866 /* Utils.swift */,
+				F2FAF0602449A1EE00B6FCC2 /* WKWebView.swift */,
+				1461090A243478F600315C65 /* HomeshowManager.swift */,
+				F25633F3243F454C00DB7AD0 /* HomeshowVRViewController.storyboard */,
+				1461090D243478F600315C65 /* HomeshowVRViewController.swift */,
+				1461091624347ACC00315C65 /* HomeshowCallViewController.storyboard */,
+				F25633F1243F3E8900DB7AD0 /* HomeshowCallViewController.swift */,
+				1461090B243478F600315C65 /* UIViewController+Storyboardable.swift */,
+				F2E9CE8D246555AA002BAB7E /* KJLHomeshow.swift */,
+			);
+			path = KJLHomeshow;
+			sourceTree = "<group>";
+		};
+		3DE1AB0DCC617F5B104A9991 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D15F4514F98DA93D290EB3E5 /* Pods-KJLHomeshow.debug.xcconfig */,
+				5E2B353D84CE88984FFACA5F /* Pods-KJLHomeshow.release.xcconfig */,
+				DE79E093AC68E39E365D662C /* Pods-KJLHomeshow.forbeta.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		B4958D1DF4700CF02B449D25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F24C6F692472801F00A61D87 /* UserNotifications.framework */,
+				F25633EF243DBB7700DB7AD0 /* WebKit.framework */,
+				D68488BBB8B95359C4393396 /* Pods_KJLHomeshow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F26714C2247B9FDB005DE159 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		F26714DF247BB960005DE159 /* EventSource */ = {
+			isa = PBXGroup;
+			children = (
+				F26714E0247BB960005DE159 /* Event.swift */,
+				F26714E1247BB960005DE159 /* EventSource.swift */,
+				F26714E2247BB960005DE159 /* EventStreamParser.swift */,
+			);
+			path = EventSource;
+			sourceTree = "<group>";
+		};
+		F26714E6247BB99B005DE159 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F26714E7247BB99B005DE159 /* WebViewJavascriptBridgeBase.m */,
+				F26714E8247BB99B005DE159 /* WKWebViewJavascriptBridge.m */,
+				F26714E9247BB99B005DE159 /* WebViewJavascriptBridge.m */,
+				F26714EA247BB99B005DE159 /* WebViewJavascriptBridgeBase.h */,
+				F26714EB247BB99B005DE159 /* WebViewJavascriptBridge.js.txt */,
+				F26714EC247BB99B005DE159 /* WebViewJavascriptBridge.h */,
+				F26714ED247BB99B005DE159 /* WKWebViewJavascriptBridge.h */,
+			);
+			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		146108FA243478E800315C65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D998D924CAD81F0006347C /* KJLHomeshow.h in Headers */,
+				F26714F4247BB99B005DE159 /* WKWebViewJavascriptBridge.h in Headers */,
+				F26714F3247BB99B005DE159 /* WebViewJavascriptBridge.h in Headers */,
+				F26714F1247BB99B005DE159 /* WebViewJavascriptBridgeBase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		146108FE243478E800315C65 /* KJLHomeshow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14610907243478E800315C65 /* Build configuration list for PBXNativeTarget "KJLHomeshow" */;
+			buildPhases = (
+				B46216F1047353BFB7DD60A0 /* [CP] Check Pods Manifest.lock */,
+				146108FA243478E800315C65 /* Headers */,
+				146108FB243478E800315C65 /* Sources */,
+				146108FC243478E800315C65 /* Frameworks */,
+				146108FD243478E800315C65 /* Resources */,
+				146109252435BFCF00315C65 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2D998D724CACED00006347C /* PBXTargetDependency */,
+			);
+			name = KJLHomeshow;
+			productName = KJLHomeshow;
+			productReference = 146108FF243478E800315C65 /* KJLHomeshow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		146108F6243478E800315C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = kujiale;
+				TargetAttributes = {
+					146108FE243478E800315C65 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					F26CCD842484EC33008D5508 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F2C3E136246533B7006D0D69 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 146108F9243478E800315C65 /* Build configuration list for PBXProject "KJLHomeshow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 146108F5243478E800315C65;
+			productRefGroup = 14610900243478E800315C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				146108FE243478E800315C65 /* KJLHomeshow */,
+				F2C3E136246533B7006D0D69 /* UMModuleMap */,
+				F26CCD842484EC33008D5508 /* UniversalKJLHomeshow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		146108FD243478E800315C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26714F2247BB99B005DE159 /* WebViewJavascriptBridge.js.txt in Resources */,
+				F25633F4243F454C00DB7AD0 /* HomeshowVRViewController.storyboard in Resources */,
+				1461091724347ACC00315C65 /* HomeshowCallViewController.storyboard in Resources */,
+				1461091824347B5700315C65 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B46216F1047353BFB7DD60A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KJLHomeshow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26CCD892484EC3C008D5508 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"KJLHomeshow\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"KJLHomeshow\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/KJLHomeshow.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/KJLHomeshow.framework/Modules/KJLHomeshow.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/KJLHomeshow.framework/Modules/KJLHomeshow.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/KJLHomeshow.framework/KJLHomeshow\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/KJLHomeshow.framework/KJLHomeshow\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/KJLHomeshow.framework/KJLHomeshow\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/KJLHomeshow.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+		};
+		F2C3E13B246533EC006D0D69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -d \"${BUILT_PRODUCTS_DIR}/UMModuleMap\" ]; then\n    echo \"${BUILT_PRODUCTS_DIR}/UMModuleMap directory already exists, so skipping the rest of the script.\"\n    exit 0\nfi\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/UMModuleMap\"\ncat <<EOF > \"${BUILT_PRODUCTS_DIR}/UMModuleMap/module.modulemap\"\nmodule UM [system] {\n    header \"${SRCROOT}/../Pods/UMCCommon/UMCommon.framework/Headers/UMConfigure.h\"\n    header \"${SRCROOT}/../Pods/UMCCommon/UMCommon.framework/Headers/UMCommon.h\"\n    header \"${SRCROOT}/../Pods/UMCPush/UMPush.framework/Headers/UMessage.h\"\n    export *\n}\nEOF\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		146108FB243478E800315C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FAF0612449A1EE00B6FCC2 /* WKWebView.swift in Sources */,
+				F26714E5247BB960005DE159 /* EventStreamParser.swift in Sources */,
+				F26714E3247BB960005DE159 /* Event.swift in Sources */,
+				F25633F2243F3E8900DB7AD0 /* HomeshowCallViewController.swift in Sources */,
+				F26714EF247BB99B005DE159 /* WKWebViewJavascriptBridge.m in Sources */,
+				F23DECDA24C1A3D50079E866 /* Utils.swift in Sources */,
+				F26714F0247BB99B005DE159 /* WebViewJavascriptBridge.m in Sources */,
+				F26714EE247BB99B005DE159 /* WebViewJavascriptBridgeBase.m in Sources */,
+				14610910243478F600315C65 /* HomeshowManager.swift in Sources */,
+				F2FAF0632449D20A00B6FCC2 /* Const.swift in Sources */,
+				F26714E4247BB960005DE159 /* EventSource.swift in Sources */,
+				1461090F243478F600315C65 /* HomeshowVRViewController.swift in Sources */,
+				1461090E243478F600315C65 /* UIViewController+Storyboardable.swift in Sources */,
+				F2E9CE8E246555AA002BAB7E /* KJLHomeshow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2D998D724CACED00006347C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2C3E136246533B7006D0D69 /* UMModuleMap */;
+			targetProxy = F2D998D624CACED00006347C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07B55B3E243DA0F000EBC79E /* ForBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ForBeta;
+		};
+		07B55B3F243DA0F000EBC79E /* ForBeta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE79E093AC68E39E365D662C /* Pods-KJLHomeshow.forbeta.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework/Headers/",
+					"${SRCROOT}/../Pods/UMCCommon/UMCommon.framework/Headers/",
+					"${SRCROOT}/../Pods/UMCPush/UMPush.framework/Headers/",
+				);
+				INFOPLIST_FILE = KJLHomeshow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kujiale.homeshow.Homeshow;
+				PRODUCT_NAME = KJLHomeshow;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${BUILT_PRODUCTS_DIR}/UMModuleMap";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = YES;
+			};
+			name = ForBeta;
+		};
+		14610905243478E800315C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14610906243478E800315C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14610908243478E800315C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15F4514F98DA93D290EB3E5 /* Pods-KJLHomeshow.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework/Headers/",
+					"${SRCROOT}/../Pods/UMCCommon/UMCommon.framework/Headers/",
+					"${SRCROOT}/../Pods/UMCPush/UMPush.framework/Headers/",
+				);
+				INFOPLIST_FILE = KJLHomeshow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kujiale.homeshow.Homeshow;
+				PRODUCT_NAME = KJLHomeshow;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${BUILT_PRODUCTS_DIR}/UMModuleMap";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = YES;
+			};
+			name = Debug;
+		};
+		14610909243478E800315C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E2B353D84CE88984FFACA5F /* Pods-KJLHomeshow.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework/Headers/",
+					"${SRCROOT}/../Pods/UMCCommon/UMCommon.framework/Headers/",
+					"${SRCROOT}/../Pods/UMCPush/UMPush.framework/Headers/",
+				);
+				INFOPLIST_FILE = KJLHomeshow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kujiale.homeshow.Homeshow;
+				PRODUCT_NAME = KJLHomeshow;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${BUILT_PRODUCTS_DIR}/UMModuleMap";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = YES;
+			};
+			name = Release;
+		};
+		F26CCD862484EC33008D5508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F26CCD872484EC33008D5508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F26CCD882484EC33008D5508 /* ForBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = ForBeta;
+		};
+		F2C3E138246533B7006D0D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2C3E139246533B7006D0D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2C3E13A246533B7006D0D69 /* ForBeta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = ForBeta;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		146108F9243478E800315C65 /* Build configuration list for PBXProject "KJLHomeshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14610905243478E800315C65 /* Debug */,
+				14610906243478E800315C65 /* Release */,
+				07B55B3E243DA0F000EBC79E /* ForBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14610907243478E800315C65 /* Build configuration list for PBXNativeTarget "KJLHomeshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14610908243478E800315C65 /* Debug */,
+				14610909243478E800315C65 /* Release */,
+				07B55B3F243DA0F000EBC79E /* ForBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26CCD852484EC33008D5508 /* Build configuration list for PBXAggregateTarget "UniversalKJLHomeshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26CCD862484EC33008D5508 /* Debug */,
+				F26CCD872484EC33008D5508 /* Release */,
+				F26CCD882484EC33008D5508 /* ForBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C3E137246533B7006D0D69 /* Build configuration list for PBXAggregateTarget "UMModuleMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C3E138246533B7006D0D69 /* Debug */,
+				F2C3E139246533B7006D0D69 /* Release */,
+				F2C3E13A246533B7006D0D69 /* ForBeta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 146108F6243478E800315C65 /* Project object */;
+}

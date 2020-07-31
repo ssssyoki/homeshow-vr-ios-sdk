@@ -1,0 +1,11 @@
+framework module KJLHomeshow {
+  umbrella header "KJLHomeshow.h"
+
+  export *
+  module * { export * }
+}
+
+module KJLHomeshow.Swift {
+    header "KJLHomeshow-Swift.h"
+    requires objc
+}
