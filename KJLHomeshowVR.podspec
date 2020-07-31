@@ -116,7 +116,7 @@ Pod::Spec.new do |spec|
     #
 
     # spec.framework  = "SomeFramework"
-    spec.vendored_frameworks = "KJLHomeshow.framework"
+    spec.vendored_frameworks = "KJLHomeshowVR.framework"
     spec.frameworks = "UserNotifications", "Accelerate"
 
     # spec.library   = "iconv"
